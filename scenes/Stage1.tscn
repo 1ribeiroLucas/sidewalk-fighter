@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bgbopohh83fvo"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_x15ge"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x15ge"]
+size = Vector2(0.9994794, 0.9846153)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_k0akp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtqtc"]
+size = Vector2(0.99224806, 0.99913245)
+
+[node name="Stage1" type="Node2D" unique_id=498508342]
+
+[node name="Ground" type="Sprite2D" parent="." unique_id=1122470540]
+position = Vector2(192.00002, 176)
+scale = Vector2(320.25, 32.25)
+texture = SubResource("CanvasTexture_x15ge")
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Ground" unique_id=418299931]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground/StaticBody2D" unique_id=485592610]
+shape = SubResource("RectangleShape2D_x15ge")
+
+[node name="Walls" type="Sprite2D" parent="." unique_id=475805330]
+position = Vector2(15.999999, 96)
+scale = Vector2(32.5, 192)
+texture = SubResource("CanvasTexture_k0akp")
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls" unique_id=530879952]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D" unique_id=2046738471]
+position = Vector2(0.0038759708, 0.0004338622)
+shape = SubResource("RectangleShape2D_rtqtc")
+
+[node name="Walls2" type="Sprite2D" parent="." unique_id=1061628975]
+position = Vector2(367.99994, 96)
+scale = Vector2(32.5, 192)
+texture = SubResource("CanvasTexture_k0akp")
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Walls2" unique_id=501935987]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls2/StaticBody2D" unique_id=1249217438]
+position = Vector2(0.0038759708, 0.0004338622)
+shape = SubResource("RectangleShape2D_rtqtc")

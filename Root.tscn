@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ceelyeredqve2"]
+
+[ext_resource type="PackedScene" uid="uid://bgbopohh83fvo" path="res://scenes/Stage1.tscn" id="1_gxo8o"]
+[ext_resource type="PackedScene" uid="uid://dnlgrcexw07ww" path="res://scenes/Character.tscn" id="2_24d08"]
+
+[node name="Root" type="Node2D" unique_id=966846055]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1004005396]
+position = Vector2(192, 88)
+zoom = Vector2(3, 3)
+
+[node name="Stage1" parent="." unique_id=498508342 instance=ExtResource("1_gxo8o")]
+
+[node name="Character" parent="Stage1" unique_id=807312340 instance=ExtResource("2_24d08")]
+position = Vector2(64, 136)
